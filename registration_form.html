@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--Rick Yost 17 Feb 2018-->
+<!--Registration Form-->
+<html>
+	<head>
+		<title>Registration Form</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<form action="process.php" method="post">
+		    <div>
+			    <h2>Please Register</h2>
+			    <p>
+				    <label for="first_name">First Name:</label>
+				    <input type="text" id="first_name" name="first_name">
+			   	</p>
+			   	<p>
+				    <label for="last_name">Last Name:</label>
+				    <input type="text" id="last_name" name="last_name">
+			   	</p>
+			    <p>
+				    <label for="email">Email:</label>
+				    <input type="text" id="email" name="email">
+			   	</p>
+		   	</div>
+		   	<div>
+			   	<p>
+					<label>
+					    Password:<input type="password" name="password">
+					</label>
+			   	</p>
+			   	<p>
+				    <label>
+				    	Confirm Password:<input type="password" name="password2">
+				    </label>
+			   	</p>
+		   	</div>
+		   	<div>
+			   	<p>
+				    <label for="birthday">
+				    	Birthday:<input type="date" id="birthday" name="birthday">
+				    </label>
+			   	</p>
+
+			    <p>Select your gender:</p>
+			    <label>
+			    	Male<input type="radio" name="gender" value="male">
+			   	</label>
+			    <label>
+			    	Female<input type="radio" name="gender" value="female">
+				</label>
+			   	<label>
+			   		Other<input type="radio" name="gender" value="other">
+			    </label>
+			    
+			    <p>A short description about yourself:</p>
+			    <textarea name="description"></textarea>
+			   	
+			   	<p>Favorite Language:
+				    <select name="FavoriteCode">
+				    	<option value="Javascript">Javascript</option>
+				    	<option value="Python">Python</option>
+				    	<option value="Pascal">Pascal</option>
+				    	<option value="Swift">Swift</option>
+				    </select>
+			   	</p>
+		   	</div>
+		   	<p><input type="submit" value="Submit"></p>
+		</form>
+	</body>
+</html>
